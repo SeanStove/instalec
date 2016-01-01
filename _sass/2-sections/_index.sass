@@ -1,4 +1,53 @@
 .slide
+  min-width: 960px
   background: url(../img/bgr_slide.jpg) center center
   background-size: cover
   height: 631px
+
+.projects
+  background-color: $bgcolor
+  color: white
+  margin: 0 auto
+
+  h3
+    font-family: 'DIN Offc Pro', sans-serif
+    letter-spacing: 0.05em
+    font:
+      size: 30px
+      weight: 100
+    text-transform: uppercase
+    margin: 0 auto 5px auto
+
+  .projects-lockup
+    max-width: 1000px
+    margin: 0 auto
+    padding-bottom: 40px
+    text-align: center
+    +display(flex)
+    +align-items(top)
+    +justify-content(space-around)
+
+    .projects-col
+      max-width: 225px
+      // overflow icons to previous element
+      margin-top: -120px
+
+      .projects-summary
+        font-family: 'Lato Light', sans-serif
+        // used to align more-info bottoms
+        height: 180px
+
+      .projects-summary-small
+        font-family: 'Lato Light', sans-serif
+        // used to align more-info bottoms, hack because of title
+        height: 132px
+
+      .more-info
+        color: white
+        padding: 10px 30px 10px 30px
+        border: 1px solid white
+        text-decoration: none
+        text-transform: uppercase
+
+.contact
+  height: 400px
