@@ -47,5 +47,20 @@ title: home
   </div>
 </section>
 <section id="contact" class="contact">
-  Contact
+  <div class="contact-content">
+    <h4>Contacteer <span class="h4-accent">ons</span></h4>
+    <p>
+      Heeft u vragen of opmerkingen, aarzel dan zeker niet om vrijblijvend contact
+      met ons op te nemen. We laten u zo snel mogelijk iets weten.
+    </p>
+    <form action="/" method="post">
+        <input id="name" name="name" type="text" value="" placeholder="NAAM*" required />
+        <input id="email" name="email" type="email" value="" placeholder="E-MAILADRES*" required />
+        <input id="phone" name="phone" type="text" value="" placeholder="TELEFOONUMMER" />
+
+        <textarea id="message" name="message" type="text" rows="4" cols="40" placeholder="BERICHT" required></textarea>
+
+        <input type="submit" value="Verstuur" />
+    </form>
+  </div>
 </section>
