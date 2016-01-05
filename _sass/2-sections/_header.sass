@@ -27,16 +27,29 @@ header
       text-decoration: none
       margin-left: 42px
 
+.logo
+  margin: 34px 0 0 14%
+  //background: url(../img/logo.png)
+  float: left
+
+  svg
+    +size(50px)
+
+  #inner
+    fill: $bgcolor
+
+  #outer
+    fill: #FFFFFF
+
+
+@media (max-width: 1400px)
   .logo
-    margin: 34px 0 0 143px
-    //background: url(../img/logo.png)
-    float: left
+    margin: 34px 0 0 10%
 
-    svg
-      +size(50px)
+@media (max-width: 1200px)
+  .logo
+    margin: 34px 0 0 7%
 
-    #inner
-      fill: $bgcolor
-
-    #outer
-      fill: #FFFFFF
+@media (max-width: 1100px)
+  .logo
+    margin: 34px 0 0 20px
