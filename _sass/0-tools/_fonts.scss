@@ -15,6 +15,14 @@
 }
 
 @font-face {
+	font-family: 'DIN Offc Pro Light';
+	src: url('../fonts/DINOffcProLight.eot');
+	src: url('../fonts/DINOffcProLight.woff') format('woff'), url('../fonts/DINOffcProLight.ttf') format('truetype'), url('../fonts/DINOffcProLight.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
 	font-family: 'DIN Offc Pro';
 	src: url('../fonts/DINOffcProMedium.eot');
 	src: url('../fonts/DINOffcProMedium.woff') format('woff'), url('../fonts/DINOffcProMedium.ttf') format('truetype'), url('../fonts/DINOffcProMedium.svg') format('svg');

@@ -1,6 +1,11 @@
 <header>
-  <div class="logo">{% include icons/logo.svg %}</div>
-  <h1>Instalec</h1>
+  <div class="logo">
+    <div class="logo-svg">{% include icons/logo.svg %}</div>
+    <div class="logo-title">
+      <h1>Instalec</h1>
+      <div class="h1-sub">Installatiebedrijf</div>
+    </div>
+  </div>
   <nav>
     <a href="{{ "/" | prepend: site.baseurl }}">Home</a>
     <a href="{{ "/#" | prepend: site.baseurl }}">Projecten</a>
