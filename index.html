@@ -3,22 +3,21 @@ layout: default
 title: home
 ---
 
-<div class="slide">
+<section class="slide">
   <div class="slide-content">
-    <h2>Totaalinrichting</h2>
-    <p class="h2-accent">van kippenstallen</p>
+    <h2>Totaalinrichting<span class="h2-accent">van kippenstallen</span></h2>
     <p class="wrap">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultricies,
       ipsum in venenatis faucibus, felis urna convallis risus, a convallis quam
       mi ut mi. Maecenas laoreet id sapien eget dictum
     </p>
   </div>
-</div>
+</section>
 
 <section class="projects">
   <div class="projects-lockup">
     <div class="projects-col">
-      <img class="icon-chicken" src="{{ "/img/icon_chicken.png" | prepend: site.baseurl }}">
+      <img class="icon-chicken" src="{{ "/img/icon_chicken.png" | prepend: site.baseurl }}" alt="kippenstallen">
       <h3>Kippenstallen</h3>
       <p class="projects-summary">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
@@ -27,7 +26,7 @@ title: home
       <a class="more-info" href="{{ "/projecten/kippenstallen/" | prepend: site.baseurl }}">Meer info</a>
     </div>
     <div class="projects-col">
-      <img class="icon-pig" src="{{ "/img/icon_pig.png" | prepend: site.baseurl }}">
+      <img class="icon-pig" src="{{ "/img/icon_pig.png" | prepend: site.baseurl }}" alt="varkenstallen">
       <h3>Varkensstallen</h3>
       <p class="projects-summary">
         Duis at pellentesque turpis. Vestibulum ante ipsum primis in faucibus orci
@@ -37,7 +36,7 @@ title: home
       <a class="more-info" href="{{ "/projecten/varkensstallen/" | prepend: site.baseurl }}">Meer info</a>
     </div>
     <div class="projects-col">
-      <img class="icon-house" src="{{ "/img/icon_house.png" | prepend: site.baseurl }}">
+      <img class="icon-house" src="{{ "/img/icon_house.png" | prepend: site.baseurl }}" alt="algemene elektriciteit">
       <h3>Algemene elektriciteit</h3>
       <p class="projects-summary-small">
         Nullam vehicula condimentum turpis in efficitur.
@@ -59,7 +58,7 @@ title: home
         <input id="email" name="email" type="email" value="" placeholder="E-MAILADRES*" required />
         <input id="phone" name="phone" type="text" value="" placeholder="TELEFOONUMMER" />
 
-        <textarea id="message" name="message" type="text" rows="4" cols="40" placeholder="BERICHT" required></textarea>
+        <textarea id="message" name="message" rows="4" cols="40" placeholder="BERICHT" required></textarea>
 
         <input type="submit" value="Verstuur" />
     </form>
