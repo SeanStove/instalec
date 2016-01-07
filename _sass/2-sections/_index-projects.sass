@@ -17,35 +17,57 @@
     padding-bottom: 40px
     text-align: center
 
-    .projects-col
-      max-width: 225px
-      // overflow icons to previous element
-      margin-top: -120px
+  .projects-summary
+    font-family: 'Lato Light', sans-serif
 
-      .projects-summary
-        font-family: 'Lato Light', sans-serif
-        // used to align more-info bottoms
-        height: 180px
+  .projects-summary-small
+    font-family: 'Lato Light', sans-serif
 
-      .projects-summary-small
-        font-family: 'Lato Light', sans-serif
-        // used to align more-info bottoms, hack because of title
-        height: 132px
+  .more-info
+    color: white
+    padding: 10px 30px 10px 30px
+    border: 1px solid white
+    text-decoration: none
+    text-transform: uppercase
 
-      .more-info
-        color: white
-        padding: 10px 30px 10px 30px
-        border: 1px solid white
-        text-decoration: none
-        text-transform: uppercase
 
-@media (min-width: 750px)
+@media (min-width: 700px)
   .projects-lockup
     max-width: 1000px
     +display(flex)
     +align-items(top)
     +justify-content(space-around)
 
-@media (max-width: 750px)
+  .projects-col
+    max-width: 225px
+    // overflow icons to previous element
+    margin-top: -120px
+
+  .projects-summary
+    // used to align more-info bottoms
+    height: 180px
+
+  .projects-summary-small
+    // used to align more-info bottoms, hack because of title
+    height: 132px
+
+@media (max-width: 700px)
   .projects-lockup
     display: block
+
+  .icon-chicken
+    // overflow icons to previous element
+    margin-top: -120px
+
+  .icon-pig, .icon-house
+    margin-top: 60px
+
+  .projects-summary
+    max-width: 300px
+    margin: 0 auto
+    padding-bottom: 30px
+
+  .projects-summary-small
+    max-width: 300px
+    margin: 0 auto
+    padding-bottom: 30px
