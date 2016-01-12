@@ -1,0 +1,13 @@
+<nav>
+  <ul id="menu">
+    <li><a href="{{ "/" | prepend: site.baseurl }}">Home</a></li>
+    <li><a href="{{ "/#" | prepend: site.baseurl }}">Projecten</a>
+      <ul class="hidden">
+      <li><a href="{{ "/projecten/kippenstallen/" | prepend: site.baseurl }}">Kippenstallen</a></li>
+      <li><a href="{{ "/projecten/varkensstallen/" | prepend: site.baseurl }}">Varkensstallen</a></li>
+      <li><a href="{{ "/projecten/algemene-elektriciteit/" | prepend: site.baseurl }}">Algemene elektriciteit</a></li>
+    </ul>
+    </li>
+    <li><a href="{{ "/#contact" | prepend: site.baseurl }}">Contact</a></li>
+  </ul>
+</nav>
