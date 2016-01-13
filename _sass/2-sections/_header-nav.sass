@@ -62,14 +62,22 @@ nav
   ul li a:hover + .hidden, .hidden:hover
     display: block
 
-@media screen and (max-width : 760px)
+@media screen and (max-width : 700px)
   nav
+    width: 100%
+    margin: 0
+
     ul
       position: static
-      //display: none
 
-    li
-      margin-bottom: 1px
+    li a
+      height: 62px
+      line-height: 62px
 
     ul li, li a
       width: 100%
+
+    li ul li a
+      margin-left: 0
+      padding: 0
+      text-align: center
