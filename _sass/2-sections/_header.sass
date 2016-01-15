@@ -1,10 +1,11 @@
 header
   color: white
   height: 124px
-  background: url(../img/bgr_topnav.jpg) center center
+  background-color: $bgcolor
   background-size: cover
   font-family: 'DIN Offc Pro', sans-serif
   text-transform: uppercase
+  display: flex
 
   h1
     margin: 7px 0 0 10px
@@ -23,7 +24,6 @@ header
 
 .logo
   margin: 0 0 0 14%
-  float: left
 
 .logo-title
   text-align: center
@@ -42,6 +42,10 @@ header
   .outer
     fill: #FFFFFF
 
+@media (min-width: 785px)
+  header
+    background: url(../img/bgr_topnav.jpg) center center
+
 @media (max-width: 1400px)
   .logo
     margin: 0 0 0 10%
@@ -56,7 +60,7 @@ header
 
 @media (max-width: 700px)
   .logo
-    margin: 0 0 15px 0
+    margin: 0 0 25px 0
     width: 100%
     text-align: center
 
@@ -69,11 +73,8 @@ header
     margin: 0
 
   header
-    background: none
     width: 100%
-    background-color: $bgcolor
     display: table
-    margin: 0 auto
 
     h1
       margin: 0 0 0 10px
