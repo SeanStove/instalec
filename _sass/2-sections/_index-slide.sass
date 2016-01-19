@@ -7,6 +7,27 @@
   height: 631px
   color: white
 
+  h2
+    margin: 0 auto
+    padding-top: 100px
+    font-family: 'DIN Offc Pro', sans-serif
+    text-transform: uppercase
+    letter-spacing: 0.10em
+    font:
+      size: 68px
+      weight: 500
+
+  .h2-accent
+    display: block
+    margin: 35px auto
+    padding-right: 8px
+    font-family: 'DIN Offc Pro Light', sans-serif
+    text-transform: uppercase
+    letter-spacing: 0.05em
+    font:
+      size: 24px
+      weight: 500
+
 .slide-chicken
   background: url(../img/bgr_slide.jpg) center center
 
@@ -28,27 +49,6 @@
   font:
     size: 14px
 
-h2
-  margin: 0 auto
-  padding-top: 100px
-  font-family: 'DIN Offc Pro', sans-serif
-  text-transform: uppercase
-  letter-spacing: 0.10em
-  font:
-    size: 68px
-    weight: 500
-
-.h2-accent
-  display: block
-  margin: 35px auto
-  padding-right: 8px
-  font-family: 'DIN Offc Pro Light', sans-serif
-  text-transform: uppercase
-  letter-spacing: 0.05em
-  font:
-    size: 24px
-    weight: 500
-
 
 @media screen and (min-width: 980px)
   .slide-content
@@ -59,14 +59,16 @@ h2
     margin: 0 12% 0 auto
 
 @media screen and (max-width : 980px)
-  h2
-    font:
-      size: 34px
+  .slide
 
-  .h2-accent
-    margin: 15px auto
-    font:
-      size: 12px
+    h2
+      font:
+        size: 34px
+
+    .h2-accent
+      margin: 15px auto
+      font:
+        size: 12px
 
   .slide-content
     margin: 0 3% 0 auto
