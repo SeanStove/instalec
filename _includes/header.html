@@ -1,10 +1,13 @@
 <header>
   <div class="logo">
-    <div class="logo-svg">{% include icons/logo.svg %}</div>
-    <div class="logo-title">
-      <h1>Instalec</h1>
-      <div class="h1-sub">Installatiebedrijf</div>
-    </div>
+    <a href="{{ "/" | prepend: site.baseurl }}">
+      <div class="logo-svg">{% include icons/logo.svg %}</div>
+      <div class="logo-title">
+        <h1>Instalec</h1>
+        <div class="h1-sub">Installatiebedrijf</div>
+      </div>
+    </a>
   </div>
+
   {% include nav.html %}
 </header>
