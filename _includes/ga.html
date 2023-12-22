@@ -7,4 +7,13 @@
     ga('create', 'UA-71579134-1', 'auto');
     ga('send', 'pageview');
 
+    grecaptcha.ready(function () {
+    grecaptcha
+      .execute("6LdAqCIlAAAAAIBSBWPGGq8-Gmffd5XXuc0DpZ46", {
+        action: "homepage",
+      })
+      .then(function (token) {
+        document.getElementById("captchaResponse").value = token;
+      });
+    });
 </script>
