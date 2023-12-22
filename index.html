@@ -76,14 +76,54 @@ title: Instalec - Installatiebedrijf, totaalinrichting van kippenstallen, varken
       aarzel dan niet om vrijblijvend contact met ons op te nemen.
       We laten u zo snel mogelijk iets weten.
     </p>
-    <form action="{{ "/contact.php" | prepend: site.baseurl }}" method="post">
-        <input id="name" name="name" type="text" value="" placeholder="NAAM*" required />
-        <input id="email" name="email" type="email" value="" placeholder="E-MAILADRES*" required />
-        <input id="phone" name="phone" type="text" value="" placeholder="TELEFOONUMMER" />
+     <form
+          action="https://getform.io/f/76a2bf55-1363-494d-864f-4d67f632c5aa"
+          method="POST"
+        >
+          <input
+            id="naam"
+            name="naam"
+            type="text"
+            value=""
+            placeholder="NAAM*"
+            required
+          />
+          <input
+            id="email"
+            name="email"
+            type="email"
+            value=""
+            placeholder="E-MAILADRES*"
+            required
+          />
+          <input
+            id="telefoonnr"
+            name="telefoonnr"
+            type="text"
+            value=""
+            placeholder="TELEFOONNUMMER"
+          />
 
-        <textarea id="message" name="message" rows="4" cols="40" placeholder="BERICHT" required></textarea>
-
-        <input type="submit" value="Verstuur" />
-    </form>
+          <textarea
+            id="bericht"
+            name="bericht"
+            rows="4"
+            cols="40"
+            placeholder="BERICHT"
+            required
+          ></textarea>
+          <input
+            type="hidden"
+            id="captchaResponse"
+            name="g-recaptcha-response"
+          />
+          <input type="submit" value="Verstuur" />
+          <div class="terms">
+            This site is protected by reCAPTCHA and the Google
+            <a href="https://policies.google.com/privacy">Privacy Policy</a> and
+            <a href="https://policies.google.com/terms">Terms of Service</a>
+            apply.
+          </div>
+        </form>
   </div>
 </section>
